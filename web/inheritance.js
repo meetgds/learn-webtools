@@ -64,5 +64,81 @@ function getProfile() {
     console.log("Type 4 Inheritance using a custom inherit function similar to Object.create()")
     console.log("ricky.name: " + ricky.name);
     console.log("ricky.location: " + ricky.location);
+
 }
+
+function getStudent() {
+    //    'delete' keyword deletes a property of an object, it doesn't delete a variable or an object as a whole
+
+    var student = {
+        name: "Gagagn",
+        age: 25,
+        location: "Delhi"
+    };
+
+    console.log("Student's location : " + student.location)  //Delhi
+
+    delete student;              //doesn't work
+    console.log("Student's location : " + student.location)  //Delhi
+
+    delete student.location;
+    console.log("Student's location : " + student.location)   //undefined
+
+    // 'delete' doesn't delete prototype's properties
+    var engineer = Object.create(student);
+    engineer.stream = "Btech";
+    engineer.colg = "IIT"
+
+    delete engineer.age;    //doesn't work
+    console.log("Engineer's age : " + engineer.age)  //25
+    console.log("Engineer's colg : " + engineer.colg)  //IIT
+
+    delete engineer.colg;   //works
+    console.log("Engineer's colg : " + engineer.colg)  //undefined
+
+
+}
+
+function testHoisting() {
+
+    // If we have a global (or parent) variable declared and we declare the same inside the function again, then
+    // the function never uses the value of parent (or global) variable, and its value remains undefined till the
+    // the point where that variable is defined inside the function
+
+    var salary = "1000$";
+
+    (function () {
+        console.log("Original salary was " + salary);  //here salary is undefined
+
+        var salary = "5000$";
+
+        console.log("My New Salary " + salary);
+    })();
+
+    (function () {
+        console.log("Original salary was " + salary);  //here salary defined as there is no declaration of the same inside this function
+
+    })();
+}
+
+function formatDate(userDate) {
+    // format from M/D/YYYY to YYYYMMDD
+
+    var month = userDate.split("/")[0];
+    var date = userDate.split("/")[1];
+    var year = userDate.split("/")[2];
+
+    if(month < 10) {
+        month = "0"+month;
+    }
+    if(date < 10) {
+        date = "0"+date;
+    }
+    console.log("result: "+year+month+date)
+    return year+month+date;
+
+}
+
+
+
 

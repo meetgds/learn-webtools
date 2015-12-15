@@ -22,7 +22,6 @@ function outer(outerArg) {
 
     ( function inner(innerArg) {
         var innerParam = 'Inner';
-
         console.log(
             "outerArg = " + outerArg + "\n" +
             "outerParam = " + outerParam + "\n" +
