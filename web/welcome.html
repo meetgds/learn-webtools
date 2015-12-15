@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link href="resources/vendor/css/bootstrap.css" rel="stylesheet">
+    <link href="resources/vendor/css/bootstrap-theme.css" rel="stylesheet">
     <script src="inheritance.js"></script>
     <script src="closures.js"></script>
+    <script src="resources/vendor/js/jquery-2.1.4.min.js"></script>
+    <script src="resources/vendor/js/jquery-ui.min.js"></script>
+    <script src="resources/vendor/js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
 <h2>Welcome to GDS Website !</h2>
+<br>
 
-<div>
-    <button id="button1" onclick="getProfile()">Test Inheritance</button>
-    <br><br>
-    <button id="button2" onclick="callMultiply()">Multiply using Inner functions</button>
-    <br><br>
-    <button id="button3" onclick="outer(7)">Test Closure</button>
-    <br><br>
-    <button id="button4" onclick="getStudent()">Test Delete</button>
-    <br><br>
-    <button id="button5" onclick="testHoisting()">Test Hoisting</button>
-    <br><br>
-    <button id="button6" onclick="formatDate('8/5/2014')">Test Date</button>
-    <br><br>
+<div class="btn-group">
+    <button id="button1" class="btn btn-default" onclick="getProfile()">Test Inheritance</button>
+    <button id="button2" class="btn btn-default" onclick="callMultiply()">Multiply using Inner functions</button>
+    <button id="button3" class="btn btn-default" onclick="outer(7)">Test Closure</button>
+    <button id="button4" class="btn btn-default" onclick="getStudent()">Test Delete</button>
+    <button id="button5" class="btn btn-default" onclick="testHoisting()">Test Hoisting</button>
+    <button id="button6" class="btn btn-default" onclick="formatDate('8/5/2014')">Test Date</button>
 </div>
 
 </body>
