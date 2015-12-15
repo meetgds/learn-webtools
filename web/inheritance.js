@@ -63,7 +63,6 @@ function getProfile() {
 
     console.log("Type 4 Inheritance using a custom inherit function similar to Object.create()")
     console.log("ricky.name: " + ricky.name);
-    console.log("ricky.location: " + ricky.location);
 
 }
 
