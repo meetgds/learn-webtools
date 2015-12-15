@@ -15,15 +15,16 @@
 </head>
 <body>
 <h2>Welcome to GDS Website !</h2>
-<br>
-
-<div class="btn-group">
-    <button id="button1" class="btn btn-default" onclick="getProfile()">Test Inheritance</button>
-    <button id="button2" class="btn btn-default" onclick="callMultiply()">Multiply using Inner functions</button>
-    <button id="button3" class="btn btn-default" onclick="outer(7)">Test Closure</button>
-    <button id="button4" class="btn btn-default" onclick="getStudent()">Test Delete</button>
-    <button id="button5" class="btn btn-default" onclick="testHoisting()">Test Hoisting</button>
-    <button id="button6" class="btn btn-default" onclick="formatDate('8/5/2014')">Test Date</button>
+<div style="padding-top: 15px; " id="buttonPanel" class="btn-group " >
+    <button id="button1" class="btn btn-primary" onclick="getProfile()">Test Inheritance</button>
+    <button id="button2" class="btn btn-primary" onclick="callMultiply()">Multiply using Inner functions</button>
+    <button id="button3" class="btn btn-primary" onclick="outer(7)">Test Closure</button>
+    <button id="button4" class="btn btn-primary" onclick="getStudent()">Test Delete</button>
+    <button id="button5" class="btn btn-primary" onclick="testHoisting()">Test Hoisting</button>
+    <button id="button6" class="btn btn-primary" onclick="formatDate('8/5/2014')">Test Date</button>
+</div>
+<div style="padding: 20px; " id="resultPanel">
+    Click on a button to see results on the console.
 </div>
 
 </body>
