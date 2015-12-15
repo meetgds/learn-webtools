@@ -13,7 +13,7 @@ function multiply(x) {
 };
 
 function callMultiply() {
-    alert("Result: " + multiply(5)(2)(3));
+    console.log("Result: " + multiply(5)(2)(3));
 }
 
 //Here the function 'inner' is a closure, and it has access to all the variables
