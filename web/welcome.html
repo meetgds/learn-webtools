@@ -7,6 +7,7 @@
     <link href="resources/vendor/css/bootstrap-theme.css" rel="stylesheet">
     <script src="inheritance.js"></script>
     <script src="closures.js"></script>
+    <script src="chaining.js"></script>
     <script src="resources/vendor/js/jquery-2.1.4.min.js"></script>
     <script src="resources/vendor/js/jquery-ui.min.js"></script>
     <script src="resources/vendor/js/bootstrap.min.js"></script>
@@ -14,14 +15,15 @@
 
 </head>
 <body>
-<h2>Welcome to GDS Website !</h2>
-<div style="padding-top: 15px; " id="buttonPanel" class="btn-group " >
+<h3 style="padding: 20px; ">Some Javascript examples</h3>
+<div style="padding: 15px; " id="buttonPanel" class="btn-group " >
     <button id="button1" class="btn btn-primary" onclick="getProfile()">Test Inheritance</button>
     <button id="button2" class="btn btn-primary" onclick="callMultiply()">Multiply using Inner functions</button>
     <button id="button3" class="btn btn-primary" onclick="outer(7)">Test Closure</button>
     <button id="button4" class="btn btn-primary" onclick="getStudent()">Test Delete</button>
     <button id="button5" class="btn btn-primary" onclick="testHoisting()">Test Hoisting</button>
     <button id="button6" class="btn btn-primary" onclick="formatDate('8/5/2014')">Test Date</button>
+    <button id="button7" class="btn btn-primary" onclick="saveCompany('Sapient', 'Tech', 'USA' )">Test Chaining</button>
 </div>
 <div style="padding: 20px; " id="resultPanel">
     Click on a button to see results on the console.
