@@ -8,14 +8,17 @@
     <script src="inheritance.js"></script>
     <script src="closures.js"></script>
     <script src="chaining.js"></script>
+    <script src="MiscExamples.js"></script>
     <script src="resources/vendor/js/jquery-2.1.4.min.js"></script>
     <script src="resources/vendor/js/jquery-ui.min.js"></script>
     <script src="resources/vendor/js/bootstrap.min.js"></script>
+    <script src="resources/vendor/js/angular.min.js"></script>
+    <script src="angularApp.js"></script>
 
 
 </head>
 <body>
-<h3 style="padding: 20px; ">Some Javascript examples</h3>
+<h3 style="padding: 20px; ">Some Javascript examples!</h3>
 <div style="padding: 15px; " id="buttonPanel" class="btn-group " >
     <button id="button1" class="btn btn-primary" onclick="getProfile()">Test Inheritance</button>
     <button id="button2" class="btn btn-primary" onclick="callMultiply()">Multiply using Inner functions</button>
@@ -28,6 +31,10 @@
 <div style="padding: 20px; " id="resultPanel">
     Click on a button to see results on the console.
 </div>
-
+<div style="padding: 20px;" ng-app="myApp" ng-controller="myCtrl">
+    <label>Name: </label>
+    <input style="border: hidden" type="text" ng-model = "name">
+    <br>Your name is {{name}}
+</div>
 </body>
 </html>
