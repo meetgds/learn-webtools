@@ -14,13 +14,15 @@
     <script src="resources/vendor/js/bootstrap.min.js"></script>
     <script src="resources/vendor/js/angular.min.js"></script>
     <script src="angularApp.js"></script>
+    <script src="JqueryExamples.js"></script>
 
 
 </head>
 <body>
 <h3 style="padding-left: 20px; ">Some Javascript examples!</h3>
 <h4 style="padding-left: 20px; ">By Gagandeep</h4>
-<div style="padding: 15px; " id="buttonPanel" class="btn-group " >
+<!-- JS Examples -->
+<div style="padding: 15px 15px 0px" id="buttonPanel1" class="col-lg-12 btn-group " >
     <button id="button1" class="btn btn-primary" onclick="getProfile()">Test Inheritance</button>
     <button id="button2" class="btn btn-primary" onclick="callMultiply()">Multiply using Inner functions</button>
     <button id="button3" class="btn btn-primary" onclick="outer(7)">Test Closure</button>
@@ -30,13 +32,80 @@
     <button id="button7" class="btn btn-primary" onclick="saveCompany('Sapient', 'Tech', 'USA' )">Test Chaining</button>
     <button id="button8" class="btn btn-primary" onclick="testLoop()">Test Loop</button>
 </div>
+<!-- Jquery Examples -->
+<div style="padding: 0px 15px 15px; " id="buttonPanel2" class="col-lg-12 btn-group " >
+    <button id="appendText" class="btn btn-primary" >Append Text</button>
+    <button id="prependText" class="btn btn-primary" >Prepend Text</button>
+    <button id="addElementAfter" class="btn btn-primary">Add Element after</button>
+    <button id="addElementBefore" class="btn btn-primary"  >Add element Before</button>
+    <button id="remove" class="btn btn-primary" >Remove Added Buttons</button>
+    <button id="parent" class="btn btn-primary" onclick="getParent()">Get Parents</button>
+    <button id="toggle" class="btn btn-primary">Toggle Three Fields</button>
+</div>
 <div style="padding: 20px; " id="resultPanel">
     Click on a button to see results on the console.
 </div>
+
+<div style="padding:50px;" class="col-lg-12 form-group" >
+    <form  class="form-horizontal">
+        <fieldset>
+            <div class="row" >
+                <div class="form-group">
+                    <label id="compLabel" class="col-md-1 control-label" for="compName">Company</label>
+                    <div class="col-md-3">
+                        <input id="compName"name="compName" type="text"  class="form-control input-md" required >
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="form-group">
+                    <label id="titleLabel" class="col-md-1 control-label" for="title">Title</label>
+                    <div class="col-md-3">
+                        <input id="title"name="title" type="text"  class="form-control input-md" required >
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="form-group">
+                    <label id="functionLabel" class="col-md-1 control-label" for="function">Function</label>
+                    <div class="col-md-3">
+                        <input id="function"name="function" type="text"  class="form-control input-md" >
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="form-group">
+                    <label id="expLabel" class="col-md-1 control-label" for="exp">Experience</label>
+                    <div class="col-md-3">
+                        <input id="exp" name="exp" type="text" class="form-control input-md" required >
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="form-group">
+                    <label id="locLabel" class="col-md-1 control-label" for="location">Location</label>
+                    <div class="col-md-3">
+                        <input id="location"name="location" type="text" class="form-control input-md" >
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<!-- Angular part
 <div style="padding: 20px;" ng-app="myApp" ng-controller="myCtrl">
     <label>Name: </label>
     <input style="border: hidden" type="text" ng-model = "name">
     <br>Your name is {{name}}
 </div>
+<!-- End of Angular part -->
+
+
 </body>
 </html>
